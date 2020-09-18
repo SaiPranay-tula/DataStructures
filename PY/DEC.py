@@ -66,28 +66,36 @@ def display():
 
 display()    """
 #NESTED DECORATORS
+
+
 def decorator_function1(original_function):
     def wrapper_function1(*args,**kwargs):
-        print("DECORATOR_1")
+        print("DECORATOR_1 ",end="")
+        
         original_function(*args,**kwargs)
     return wrapper_function1
 
 def decorator_function2(original_function):
     def wrapper_function2(*args,**kwargs):
-        print("DECORATOR_2")
+        print("DECORATOR_2  ",end="")
         original_function(*args,**kwargs)
     return wrapper_function2
+
+
+i=1
 
 @decorator_function2
 @decorator_function1
 def display():
-    print("DISPLAYING")
+    print("DISPLAYING  ",end="")
+    
+
 
 
 
 
 display()
-
+print(i)
 
 
 
