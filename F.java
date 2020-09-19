@@ -7,8 +7,8 @@ class F {
         
         long a[]={1,2,2,3};
         List<Long> list=new ArrayList<>();
-        List a1=Arrays.asList(a);
-        list.addAll(a1);
+       // List a1=Arrays.asList(a);
+       // list.addAll(a1);
 
         LinkedList<Long> vect=new LinkedList<Long>();
         vect.add(0,0l);

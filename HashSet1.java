@@ -11,12 +11,12 @@ public class HashSet1 {
         has.contains(11);
         has.remove(12);
 
-        HashSet a[]=new HashSet[has.size()];
-        a=has.toArray(a);
+       // HashSet a[]=new HashSet[has.size()];
+       // a=has.toArray(a);
 
 
-        int ar[]={1,2,3,443,33322,1,2};
-        List ad =Arrays.asList(ar);
+       // int ar[]={1,2,3,443,33322,1,2};
+      //  List ad =Arrays.asList(ar);
 
 
 

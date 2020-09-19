@@ -15,12 +15,10 @@ public class LIST {
  }   
 public static void main(String[] args) {
 
-    LIST Head=new LIST();
+  //  LIST Head=new LIST();
     for(int i=0;i<3;i++)
     {
        
-
-
     }
 
 

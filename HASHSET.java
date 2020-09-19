@@ -13,7 +13,7 @@ public class HASHSET {
 
         System.out.println(hash);
 
-        hash.
+       //# hash.
 
 
     }
