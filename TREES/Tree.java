@@ -21,7 +21,6 @@ public class Tree{
     Node root;
     int count=0;
 
-
     void add(int element)
     {
         root=addNode(root,element);
@@ -49,7 +48,6 @@ public class Tree{
             }
         }
 
-
         return node;
     }
 
@@ -62,6 +60,7 @@ public class Tree{
             root=new_node;
             return;
         }
+        
         Node current_node=root;
         Node parent;
         while(true)
@@ -87,10 +86,9 @@ public class Tree{
                 }
 
             }
-
-
         }
     }
+
 
 void pre_Order(Node node)
 {
@@ -100,6 +98,7 @@ void pre_Order(Node node)
     pre_Order(node.left);
     pre_Order(node.right);
 }
+
 
 void In_Order(Node node)
 {
@@ -111,6 +110,7 @@ void In_Order(Node node)
     In_Order(node.right);
 }
 
+
 void Post_Order(Node node)
 {
     if(node==null)
@@ -120,6 +120,7 @@ void Post_Order(Node node)
     Post_Order(node.right);
     System.out.println(node.data);
 }
+
 
 Node Search(int element)
 {
@@ -138,9 +139,9 @@ Node Search(int element)
         return null;
     }
 
-
 return temp;
 }
+
 
 boolean remove(int element)
 {
@@ -152,6 +153,8 @@ boolean remove(int element)
     root=remove(root,element);
     return true;
 }
+
+
 Node remove(Node node,int element)
 {
     if(node==null)
@@ -195,26 +198,10 @@ Node remove(Node node,int element)
 
             node.right = remove(node.right, temp.data);
 
-
-
-
-
-
         }
-
-
-
-
-
     }
-
 return node;
-
 }
-
-
-
-
 
 
 Node find_Min(Node node)
@@ -231,8 +218,6 @@ Node find_Max(Node node)
     node=node.right;
  return node;   
 }
-
-
 
 
 
