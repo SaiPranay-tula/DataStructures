@@ -58,20 +58,36 @@ void add(int data,int pos)
         temp.next=newNode;
     }
 
-
-
-
-
-
 }
+void delete(int pos)
+{
+    if(head==null)
+    {
+        return ;
+    }
+    else{
+        Node1 temp=head;
+        Node1 temp2=null;
+        while(temp.data!=pos){
+        temp2=temp;
+        temp=temp.next;
+        }
+        
+        temp2.next=temp.next;
+    }
+}
+
+
+
+
 void print(Node1 temp)
 {
     while(temp.next!=head)
     {
-        System.out.println(temp.data);
+        System.out.print(temp.data);
         temp=temp.next;
     }
-    System.out.println(temp.data);
+    System.out.print(temp.data);
 }
 
 
@@ -83,6 +99,9 @@ public static void main(String[] args) {
 
    // a.print(a.head);
     a.add(14,4);
+    a.print(a.head);
+    System.out.println("###########################");
+        a.delete(4);
     a.print(a.head);
 
 
