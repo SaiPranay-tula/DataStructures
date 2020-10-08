@@ -2,10 +2,7 @@
 
 int main()
 {
-struct emp{
-    int a,b,c;
-};
-struct emp e={1,2,3};
+    char *c="kmit";
+printf("%c",*c);
 
-printf("%d",e.a);
 }
